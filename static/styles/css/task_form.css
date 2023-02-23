@@ -1,0 +1,36 @@
+
+.task-form input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.task-form input[type="checkbox"] {
+  margin-top: 8px;
+   width: 15px;
+  height: 15px;
+}
+
+.task-form .cancel-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: #1b1b1b;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.task-form button[type="submit"] {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+

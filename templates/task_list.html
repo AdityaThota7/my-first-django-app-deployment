@@ -3,18 +3,37 @@
 {% block contents %}
 
 
-<h2>List of Tasks to do:</h2>
+<h2>My Tasks</h2>
 
-<a href="{% url 'create_task' %}">Add task</a>
-    {% for task in tasks %}
-    <ul>
-        {% if task.completed %}
-        <strike><a href="{% url 'edit_task' task.id %}">{{task.title}}</a></strike> <a href="{% url 'delete_task' task.id %}">Delete</a>
-        {% else %}
-        <a href="{% url 'edit_task' task.id %}">{{task.title}}</a> <a href="{% url 'delete_task' task.id %}">Delete</a>
-        {% endif %}
-    </ul>
-    {% endfor %}
+<div class="add-style">
+<a href="{% url 'create_task' %}" class="add-btn"><i class="fas fa-plus"></i> Add New Task</a>
+</div>
+
+{% for task in tasks %}
+<ul class="task-list">
+  {% if task.completed %}
+  <li class="task-item">
+    <div class="task-info">
+      <p class="task-title"><s>{{task.title}}</s></p>
+    </div>
+    <div class="task-actions">
+      <a href="{% url 'edit_task' task.id %}" class="edit-btn"><i class="fas fa-pencil-alt"></i></a>
+      <a href="{% url 'delete_task' task.id %}" class="delete-btn"><i class="fas fa-trash"></i></a>
+    </div>
+  </li>
+  {% else %}
+  <li class="task-item">
+    <div class="task-info">
+      <p class="task-title">{{task.title}}</p>
+    </div>
+    <div class="task-actions">
+      <a href="{% url 'edit_task' task.id %}" class="edit-btn"><i class="fas fa-pencil-alt"></i></a>
+      <a href="{% url 'delete_task' task.id %}" class="delete-btn"><i class="fas fa-trash"></i></a>
+    </div>
+  </li>
+  {% endif %}
+</ul>
+{% endfor %}
 
 
 

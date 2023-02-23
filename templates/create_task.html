@@ -2,10 +2,11 @@
 
 {% block contents %}
 
-  <h1>Create New Task</h1>
-  <form method="POST">
+  <h3>Create New Task</h3>
+  <form method="POST" class="task-form">
     {% csrf_token %}
     {{ form.as_p }}
+    <a href="{% url 'task_list' %}" class="cancel-link">Cancel</a>
     <button type="submit">Save</button>
   </form>
 

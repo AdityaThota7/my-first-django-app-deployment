@@ -1,27 +1,47 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
+    <link rel="stylesheet" href="{% static 'styles/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/task_list.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/task_form.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/register.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body bgcolor="cyan">
-
-<a href="{% url 'home' %}">Home</a>
-{% if user.is_authenticated %}
-<a href="">Hello, {{user.first_name}}</a>
-<a href="{% url 'task_list' %}">Tasks</a>
-<a href="{% url 'logout' %}">Logout</a>
-{% else %}
-<a href="{% url 'register' %}">Register</a>
-<a href="{% url 'login' %}">Login</a>
-{% endif %}
-
+<body>
+<nav>
+    <div class="logo">
+        <span class="test">T</span>o<span class="test">d</span>o&nbsp;<span class="test">L</span>ist
+    </div>
+    <input type="checkbox" id="click" class="check">
+    <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+        {% if user.is_authenticated %}
+        <li><a class="active" href="">Hello, {{user.first_name}}</a></li>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'task_list' %}">Tasks</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'task_list' %}">Tasks</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        {% endif %}
+    </ul>
+</nav>
 
 {% block contents %}
 
 
 
 {% endblock %}
+
 
 </body>
 </html>

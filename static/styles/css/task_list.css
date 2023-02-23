@@ -1,0 +1,64 @@
+
+/* Task-list START */
+
+.task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task-title {
+    margin: 0;
+}
+
+.task-actions a {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+    color: #1b1b1b;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+.task-actions a:hover{
+        background-color: #1b1b1b;
+        color: #fff;
+}
+.edit-btn {
+    margin-right: 10px;
+}
+
+.delete-btn {
+    margin-right: 10px;
+}
+
+.add-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #1b1b1b;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.add-style a {
+    text-decoration: none;
+}
+
+.add-btn i {
+    margin-right: 5px;
+}
+
+/* Task-list END */

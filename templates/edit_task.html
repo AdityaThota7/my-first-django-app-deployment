@@ -1,12 +1,11 @@
 {% extends 'base.html' %}
 
 {% block contents %}
-
-<!-- edit_task.html -->
-<form method="POST" action="">
+<h3>Edit task</h3>
+<form method="POST" action="" class="task-form">
   {% csrf_token %}
   {{ form.as_p }}
-  <a href="{% url 'task_list' %}" class="btn btn-secondary">Cancel</a>
+  <a href="{% url 'task_list' %}" class="cancel-link">Cancel</a>
   <button type="submit">Save</button>
 </form>
 
