@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'styles/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/home.css' %}">
     <link rel="stylesheet" href="{% static 'styles/css/task_list.css' %}">
     <link rel="stylesheet" href="{% static 'styles/css/task_form.css' %}">
     <link rel="stylesheet" href="{% static 'styles/css/login.css' %}">
@@ -35,12 +37,23 @@
         {% endif %}
     </ul>
 </nav>
-
+<br>
 {% block contents %}
 
 
 
 {% endblock %}
+<br>
+<footer class="footer">
+  <p>Copyright &copy; 2023 <a href="{% url 'home' %}">Todo List</a> All Rights Reserved</p>
+  <p>Contact: <a href="mailto:adityathota8140@gmail.com">adityathota8140@gmail.com</a></p>
+    <ul class="social-icons">
+    <li><a href="https://twitter.com/yourproject" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/yourproject" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.facebook.com/yourproject" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="https://www.youtube.com/channel/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+</footer>
 
 
 </body>

@@ -2,9 +2,8 @@
 
 {% block contents %}
 
-
-<h2>My Tasks</h2>
-
+<div class="tlist">
+<h2>My Tasks</h2><br>
 <div class="add-style">
 <a href="{% url 'create_task' %}" class="add-btn"><i class="fas fa-plus"></i> Add New Task</a>
 </div>
@@ -34,7 +33,6 @@
   {% endif %}
 </ul>
 {% endfor %}
-
-
+</div>
 
 {% endblock %}

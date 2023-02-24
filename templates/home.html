@@ -1,7 +1,24 @@
 {% extends 'base.html' %}
 
 {% block contents %}
-
-<h2>Welcome to Todo List app created by Aditya Thota</h2><br>
-
+<div class="tlist">
+  <main class="main">
+    <section class="hero">
+      <h2 class="title">Stay Organized with My Todo List App</h2>
+      <p class="subtitle">Keep track of your tasks and stay on top of your to-do list with our simple and easy-to-use
+        app.</p>
+      <a href="{% url 'task_list' %}" class="cta-btn">Get Started</a>
+    </section>
+    <section class="features">
+      <h2 class="title">Key Features</h2>
+      <ul class="feature-list">
+        <li><i class="fas fa-check"></i> Create and organize tasks</li>
+        <li><i class="fas fa-check"></i> Easy-to-use interface</li>
+        <li><i class="fas fa-check"></i> Save tasks with account</li>
+        <li><i class="fas fa-check"></i> Collaborate with others</li>
+      </ul>
+      <p class="sign">- Created by Aditya Thota</p>
+    </section>
+  </main>
+</div>
 {% endblock %}

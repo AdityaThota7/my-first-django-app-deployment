@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+.tlist {
+    margin: 8px;
+}
 /* Navbar START */
 
 nav {
@@ -131,9 +133,52 @@ input.check {
 
 /* Navbar END */
 
+/* Footer START */
 
+.footer {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+.footer p a{
+    text-decoration: none;
+    color: white;
+}
+.footer p{
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 15px;
+}
 
+.footer p a:hover{
+    color: cyan;
+}
 
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
 
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
 
+.social-icons li:last-child {
+  margin-right: 0;
+}
 
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: cyan;
+}
+/* Footer END */
