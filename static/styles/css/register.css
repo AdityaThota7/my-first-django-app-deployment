@@ -48,7 +48,23 @@
     cursor: pointer;
 }
 .register-form .messages{
+    margin-top: 8px;
     color: red;
     text-align:center;
     font-weight: 10px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.links a {
+  color: #3273dc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }
