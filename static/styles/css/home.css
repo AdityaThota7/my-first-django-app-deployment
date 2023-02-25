@@ -85,11 +85,11 @@
     }
 
     .hero .subtitle {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .cta-btn {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .features .title {
@@ -97,14 +97,14 @@
     }
 
     .feature-list li {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .feature-list li i {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .sign {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
