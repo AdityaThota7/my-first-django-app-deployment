@@ -76,3 +76,35 @@
     padding-top: 20px;
     border-top: 1px solid #ddd;
 }
+
+
+@media (max-width: 920px){
+
+    .hero .title {
+        font-size: 1.5rem;
+    }
+
+    .hero .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .cta-btn {
+        font-size: 0.8rem;
+    }
+
+    .features .title {
+        font-size: 1.5rem;
+    }
+
+    .feature-list li {
+        font-size: 0.8rem;
+    }
+
+    .feature-list li i {
+        font-size: 0.8rem;
+    }
+
+    .sign {
+        font-size: 0.8rem;
+    }
+}

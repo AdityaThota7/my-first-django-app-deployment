@@ -47,7 +47,7 @@ def login(request):
             user = auth.authenticate(username=username, password=password)
             if user is not None:
                 auth.login(request, user)
-                return redirect('home')
+                return redirect('task_list')
             else:
                 messages.info(request, 'wrong password, try again')
                 return redirect('login')
